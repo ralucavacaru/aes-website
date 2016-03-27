@@ -1,0 +1,133 @@
+html, body {
+	margin: 0;
+	left: 0;
+	top: 0;
+	padding: none;
+}
+
+body {
+	background: url('img/4.png');
+	background-repeat: repeat;
+}
+
+#headerLogo {
+	position: absolute;
+	width: 120px;
+	left: 65px;
+	z-index: 99;
+}
+
+#headerBar {
+	position: absolute;
+	width: 100%;
+	/*height: 70px;*/
+	background-color: rgba(36, 96, 144, 1);
+	z-index: 0;
+}
+#headerBar p {
+	position: relative;
+	font-family: 'Source Sans Pro', sans-serif;
+	color: white;
+	left: 190px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#content {
+  overflow: scroll;
+	height: 100%;
+	margin-left: 250px;
+	width: calc(100% - 300px);
+	background: rgba(255, 255, 255, 0.3);
+}
+
+*{padding:0;margin:0;}
+body{font:16px/1 sans-serif}
+
+
+/*VERTICAL MENU*/
+nav.vertical{
+  position:absolute;
+  width:200px;
+  left: 25px;
+  top: 150px;
+  font-family: 'PT Sans Narrow', sans-serif;
+  text-transform: uppercase;
+}
+
+/* ALL UL */
+nav.vertical ul{
+  list-style: none;
+}
+/* ALL LI */
+nav.vertical li{
+  position:relative;
+}
+/* ALL A */
+nav.vertical a{
+  display:block;
+  color:#eee;
+  text-decoration:none;
+  padding:10px 15px;
+  background:#667;
+  background-color: rgba(36, 96, 144, 0.8);
+  transition:0.2s;
+}
+/* ALL A HOVER */
+nav.vertical li:hover > a{
+  background:#778;
+  background-color: rgba(36, 96, 144, 1);
+}
+
+/* INNER UL HIDE */
+nav.vertical ul ul{
+  position:absolute;
+  left:0%;
+  top:0;
+  width:100%;
+  visibility:hidden;
+  opacity:0;
+  transition: transform 0.2s;
+  transform: translateX(0px);
+}
+/* INNER UL SHOW */
+nav.vertical li:hover > ul{
+  left:100%;
+  visibility:visible;
+  opacity:1;
+  transform: translateX(0px);
+}
+#active {
+	 background-color: rgba(36, 96, 144, 1);
+}
+
+#ngView {
+  padding-top: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 50px;
+}
+
+/* Text Formatting */
+h1, h2, h3 {
+  font-family: 'PT Sans Narrow', sans-serif;
+  padding-bottom: 15px;
+}
+h1 {
+  font-size: 26px;
+  color: #225f8f;
+}
+h2 {
+  font-size: 22px;
+  color: #43538e;
+}
+h3 {
+  font-size: 18px;
+  color: #7d89b4;
+}
+p {
+  font-size: 14px;
+  line-height: 20px;
+  padding-bottom: 10px;
+  text-indent: 30px;
+}
